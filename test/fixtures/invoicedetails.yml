@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  Productcode: MyString
+  Productdescription: MyString
+  Qty: 9.99
+  Invoice: 
+
+two:
+  Productcode: MyString
+  Productdescription: MyString
+  Qty: 9.99
+  Invoice: 

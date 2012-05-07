@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Productcode:</b>
+  <%= @invoicedetail.Productcode %>
+</p>
+
+<p>
+  <b>Productdescription:</b>
+  <%= @invoicedetail.Productdescription %>
+</p>
+
+<p>
+  <b>Qty:</b>
+  <%= @invoicedetail.Qty %>
+</p>
+
+<p>
+  <b>Invoice:</b>
+  <%= @invoicedetail.Invoice %>
+</p>
+
+
+<%= link_to 'Edit', edit_invoicedetail_path(@invoicedetail) %> |
+<%= link_to 'Back', invoicedetails_path %>
