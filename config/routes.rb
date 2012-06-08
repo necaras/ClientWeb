@@ -1,4 +1,5 @@
-ClientWeb::Application.routes.draw do
+﻿ClientWeb::Application.routes.draw do
+
   resources :roles
 
   devise_for :users
@@ -18,6 +19,7 @@ ClientWeb::Application.routes.draw do
   resources :clients
 
   get "home/index"
+  get "contact/index"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
