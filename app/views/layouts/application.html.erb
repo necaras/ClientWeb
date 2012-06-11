@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <title>ClientWeb</title>
+  <%= stylesheet_link_tag    "application", :media =>  "all" %>
+  <%= stylesheet_link_tag    "style", :media =>  "all" %>
+  
+  <%= javascript_include_tag "application" %>
+   <title>David's Business Supplies Ltd.</title>
+ <meta http-equiv="content-type" content="application/xhtml; charset=UTF-8" />
+        
+    <script type="text/javascript">
+      var flashvars = {};
+      flashvars.cssSource = "assets/piecemaker.css";
+      flashvars.xmlSource = "assets/piecemaker.xml";
+		
+      var params = {};
+      params.play = "true";
+      params.menu = "false";
+      params.scale = "showall";
+      params.wmode = "transparent";
+      params.allowfullscreen = "true";
+      params.allowscriptaccess = "always";
+      params.allownetworking = "all";
+	  
+      swfobject.embedSWF('assets/piecemaker.swf', 'piecemaker', '920', '430', '10', null, flashvars, params, null);
+	  	  
+      swfobject.embedSWF('assets/main_logo.swf', 'main_logo2', '900', '137', '0', null, flashvars, params, null);
+	  
+    
+    </script>
+
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<p class="notice"><%= notice %></p>
+<p class="alert"><%= alert %></p>
+<%= yield %>
+
+</body>
+</html>

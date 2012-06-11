@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <title>Contact Us - David's Business Supplies</title>
+  <%= stylesheet_link_tag    "application", :media =>  "all" %>
+  <%= stylesheet_link_tag    "style", :media =>  "all" %>
+  
+  <%= javascript_include_tag "application" %>
+   <title>David's Business Supplies Ltd.</title>
+ <meta http-equiv="content-type" content="application/xhtml; charset=UTF-8" />
+        
+    <script type="text/javascript">
+      var flashvars = {};
+      flashvars.cssSource = "/assets/piecemaker.css";
+      flashvars.xmlSource = "/assets/piecemaker.xml";
+		
+      var params = {};
+      params.play = "true";
+      params.menu = "false";
+      params.scale = "showall";
+      params.wmode = "transparent";
+      params.allowfullscreen = "true";
+      params.allowscriptaccess = "always";
+      params.allownetworking = "all";
+	  
+      swfobject.embedSWF('/assets/piecemaker.swf', 'piecemaker', '920', '430', '10', null, flashvars, params, null);
+	  	  
+      swfobject.embedSWF('/assets/main_logo.swf', 'main_logo2', '900', '137', '0', null, flashvars, params, null);
+	  
+    
+    </script>
+
+<!-- Form validation by http://www.TechiePark.com starts here-->
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery.validate.js"></script>
+<script type="text/javascript" src="js/jquery.pngFix.js"></script> 
+<script type="text/javascript">
+$().ready(function() {
+	// validate the contact form when it is submitted
+	$("#contactForm").validate({
+
+		rules: {
+			name: "required",
+			email: {
+				required: true,
+				email: true
+			}
+		},
+		messages: {
+			name: "* Please enter your name",
+			email: "* Please enter a valid email address"
+		}
+	});
+});
+</script>
+
+<style type="text/css">
+#contactForm label.error {
+	padding-left:8px;
+	background-color:#ff0000;
+	color:#ffffff;
+	padding:2px;
+	width: auto;
+	display: inline;
+}
+</style>
+<!-- Form validation by http://www.TechiePark.com ends here-->
+
+<script type="text/javascript"> 
+    $(document).ready(function(){ 
+        $(document).pngFix(); 
+    }); 
+</script> 
+
+</head>
+<body>
+<p class="notice"><%= notice %></p>
+<p class="alert"><%= alert %></p>
+<%= yield %>
+
+</body>
+</html>

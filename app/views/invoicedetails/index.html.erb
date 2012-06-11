@@ -1,0 +1,29 @@
+<h1>Listing invoicedetails</h1>
+
+<table>
+  <tr>
+    <th>Productcode</th>
+    <th>Productdescription</th>
+    <th>Qty</th>
+    <th>Invoice</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @invoicedetails.each do |invoicedetail| %>
+  <tr>
+    <td><%= invoicedetail.Productcode %></td>
+    <td><%= invoicedetail.Productdescription %></td>
+    <td><%= invoicedetail.Qty %></td>
+    <td><%= invoicedetail.Invoice %></td>
+    <td><%= link_to 'Show', invoicedetail %></td>
+    <td><%= link_to 'Edit', edit_invoicedetail_path(invoicedetail) %></td>
+    <td><%= link_to 'Destroy', invoicedetail, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Invoicedetail', new_invoicedetail_path %>

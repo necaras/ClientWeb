@@ -1,0 +1,5 @@
+<% if user_signed_in? %>
+  <%= link_to('LOGOUT', destroy_user_session_path, :method => :delete, :class => "menu_links") %>  <span class="menu_border">&nbsp;</span>      
+<% else %>
+  <%= link_to('LOGIN', new_user_session_path, :class => "menu_links")  %><span class="menu_border">&nbsp;</span>
+<% end %>

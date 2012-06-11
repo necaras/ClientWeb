@@ -1,0 +1,5 @@
+﻿ <% if user_signed_in? %>
+   <%= link_to('EDIT ACCOUNT', edit_user_registration_path, :class => "menu_links") %><span class="menu_border">&nbsp;</span>
+ <% else %>
+   <%= link_to('SIGN UP', new_user_registration_path, :class => "menu_links") %><span class="menu_border">&nbsp;</span>
+ <% end %>

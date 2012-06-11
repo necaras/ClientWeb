@@ -1,0 +1,23 @@
+<h1>Listing clientcategories</h1>
+
+<table>
+  <tr>
+    <th>Description</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @clientcategories.each do |clientcategory| %>
+  <tr>
+    <td><%= clientcategory.description %></td>
+    <td><%= link_to 'Show', clientcategory %></td>
+    <td><%= link_to 'Edit', edit_clientcategory_path(clientcategory) %></td>
+    <td><%= link_to 'Destroy', clientcategory, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Clientcategory', new_clientcategory_path %>

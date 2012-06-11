@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  InvoiceNumber: 1
+  Abacusno: MyString
+  InvoiceDate: 2012-05-01
+
+two:
+  InvoiceNumber: 1
+  Abacusno: MyString
+  InvoiceDate: 2012-05-01
