@@ -21,6 +21,9 @@
   get "home/index"
   get "contact/index"
   match "contact_us" => "contact#index"
+  
+  get "about/index"
+  match "about_us" => "about#index"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
