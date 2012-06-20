@@ -18,7 +18,16 @@ ClientWeb::Application.configure do
   config.action_mailer.default_url_options = { :host => 'localhost:3000' }
 
   config.action_mailer.delivery_method = :smtp 
-  ActionMailer::Base.smtp_settings = {   :address => "mail.telus.net",   :port => 25,  :authentication => :none }
+  
+ config.action_mailer.smtp_settings = {
+  :address              => "smtp.gmail.com",
+  :port                 => 587,
+  :domain               => "davidsbusinesssupplies.com",
+  :user_name            => "no_reply@davidsbusinesssupplies.com",
+  :password             => "davids2012",
+  :authentication       => :plain,
+  :enable_starttls_auto => true
+}
   # Print deprecation notices to the Rails logger
   config.active_support.deprecation = :log
 

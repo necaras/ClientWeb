@@ -4,8 +4,7 @@
 
   devise_for :users
   devise_for :users do get '/users/sign_out' => 'devise/sessions#destroy' end
-
-
+  
   resources :invoicedetails
 
   resources :invoices
@@ -19,8 +18,12 @@
   resources :clients
 
   get "home/index"
-  get "contact/index"
-  match "contact_us" => "contact#index"
+  get "contact/new"
+
+  match 'contact_us' => 'contact#new', :as => 'contact_us', :via => :get
+  match 'contact_us' => 'contact#create', :as => 'contact_us', :via => :post
+  match 'contact' => 'contact#new', :as => 'contact', :via => :get
+  match 'contact' => 'contact#create', :as => 'contact', :via => :post
   
   get "about/index"
   match "about_us" => "about#index"

@@ -9,6 +9,16 @@ ClientWeb::Application.configure do
   config.action_controller.perform_caching = true
   config.action_mailer.default_url_options = { :host => 'www.davidsbusinesssupplies.com' }
   
+  config.action_mailer.smtp_settings = {
+  :address              => "smtp.gmail.com",
+  :port                 => 587,
+  :domain               => "davidsbusinesssupplies.com",
+  :user_name            => "no_reply@davidsbusinesssupplies.com",
+  :password             => "davids2012",
+  :authentication       => :plain,
+  :enable_starttls_auto => true
+}
+  
   # Disable Rails's static asset server (Apache or nginx will already do this)
   config.serve_static_assets = false
 
