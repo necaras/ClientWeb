@@ -90,6 +90,7 @@ cursor:pointer;
  
  .left_content_body{width:650px;margin-right:20px;color:#aaaaaa;font-size:11px;float:left;}
  .right_content_body{width:220px;color:#aaaaaa;font-size:11px;float:left;}
+ .middle_content_body{width:870px;color:#aaaaaa;font-size:11px;margin-left:auto;margin-right:auto;}
   
  .news_boxes{color:#ffffff;font-size:11px;padding:8px 5px 5px 5px;border-bottom:1px solid #464545;}
  .news_boxes:hover{color:#ffffff;font-size:11px;padding:8px 5px 5px 5px;border-bottom:1px solid #464545;background:#555555;}
@@ -120,7 +121,7 @@ cursor:pointer;
 .more_links a:hover{font-size:11px;color:#ffffff;text-decoration:underline;}
 
 /* Clients */
-.clients_logo{width:150px;height:100px;padding:1px;float:left;margin-right:70px;margin-bottom:30px;}
+.clients_logo{width:150px;height:100px;padding:1px;float:left;margin-right:60px;margin-bottom:30px;}
 .clients_logo_r{width:150px;height:100px;padding:1px;float:left;margin-right:0px;margin-bottom:30px;}
 .clients_logo img{width:150px;height:100px;border:1px solid #888888;padding:1px;}
 .clients_logo img:hover{width:150px;height:100px;border:1px solid #ffffff;padding:1px;}
