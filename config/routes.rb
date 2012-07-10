@@ -1,5 +1,8 @@
 ﻿ClientWeb::Application.routes.draw do
 
+  get "partners/index"
+  match 'partners' => 'partners#index'
+
   resources :roles
 
   devise_for :users
