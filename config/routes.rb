@@ -19,6 +19,8 @@
   resources :clientcategories
 
   resources :clients
+  
+  resources :products
 
   get "home/index"
   
