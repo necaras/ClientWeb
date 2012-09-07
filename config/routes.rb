@@ -21,6 +21,10 @@
   resources :clients
 
   get "home/index"
+  
+  get "underconst/index"
+  match "under_construction" => "underconst#index"
+  
   get "contact/new"
 
   match 'contact_us' => 'contact#new', :as => 'contact_us', :via => :get
